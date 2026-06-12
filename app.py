@@ -4,6 +4,8 @@ import sqlite3
 
 app = Flask(__name__)
 
+app.secret_key = "acr_school_secret_key_2026"
+
 @app.route("/")
 def home():
     return render_template("home.html")
