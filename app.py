@@ -49,13 +49,12 @@ def admin():
 
     return render_template("admin_login.html")
 
-@app.route("/admin/add-news", methods=["GET","POST"])
+@app.route("/admin/add-news", methods=["GET", "POST"])
 def add_news():
     return "Add News Page"
 
-@app.route("/admission", methods=["POST"])
 
-@app.route("/complaint", methods=["GET","POST"])
+@app.route("/complaint", methods=["GET", "POST"])
 def complaint():
 
     if request.method == "POST":
@@ -70,16 +69,14 @@ def complaint():
 
         cursor = conn.cursor()
 
-        cursor.execute("""
-
-        INSERT INTO complaints
-        (name,mobile,category,subject,complaint)
-
-        VALUES(?,?,?,?,?)
-
-        """,
-
-        (name,mobile,category,subject,complaint_text))
+        cursor.execute(
+            """
+            INSERT INTO complaints
+            (name,mobile,category,subject,complaint)
+            VALUES(?,?,?,?,?)
+            """,
+            (name, mobile, category, subject, complaint_text)
+        )
 
         conn.commit()
         conn.close()
@@ -88,6 +85,11 @@ def complaint():
 
     return render_template("complaint.html")
 
+
+@app.route("/test")
+def test():
+    return "Website Running Successfully"
+
+
 if __name__ == "__main__":
     app.run(debug=True)
-   
