@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>आगामी कार्यक्रम</h1>
+
+        <p>
+            विद्यालय के आगामी शैक्षणिक, सांस्कृतिक एवं सामाजिक कार्यक्रम
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="events-page">
+
+    <div class="container">
+
+        <!-- EVENT 1 -->
+
+        <div class="event-card">
+
+            <img src="{{ url_for('static',
+            filename='images/events/yogaday.png') }}"
+            alt="योग दिवस">
+
+            <div class="event-content">
+
+                <span class="event-date">
+                    21 जून 2026
+                </span>
+
+                <h2>
+                    अंतर्राष्ट्रीय योग दिवस
+                </h2>
+
+                <p>
+
+                    विद्यालय परिसर में अंतर्राष्ट्रीय योग दिवस
+                    का आयोजन किया जायेगा। विद्यार्थियों,
+                    शिक्षकों एवं अभिभावकों द्वारा सामूहिक
+                    योगाभ्यास किया जायेगा।
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- EVENT 2 -->
+
+        <div class="event-card">
+
+            <img src="{{ url_for('static',
+            filename='images/events/plantation.png') }}"
+            alt="वृक्षारोपण">
+
+            <div class="event-content">
+
+                <span class="event-date">
+                    05 जुलाई 2026
+                </span>
+
+                <h2>
+                    वृक्षारोपण अभियान
+                </h2>
+
+                <p>
+
+                    पर्यावरण संरक्षण के उद्देश्य से
+                    विद्यालय परिसर में वृक्षारोपण
+                    कार्यक्रम आयोजित किया जायेगा।
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- EVENT 3 -->
+
+        <div class="event-card">
+
+            <img src="{{ url_for('static',
+            filename='images/events/exhibition.png') }}"
+            alt="विज्ञान प्रदर्शनी">
+
+            <div class="event-content">
+
+                <span class="event-date">
+                    20 अगस्त 2026
+                </span>
+
+                <h2>
+                    विज्ञान प्रदर्शनी
+                </h2>
+
+                <p>
+
+                    विद्यार्थियों द्वारा विज्ञान आधारित
+                    मॉडल एवं नवाचार प्रदर्शित किये जायेंगे।
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

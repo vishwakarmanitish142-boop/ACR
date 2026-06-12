@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="full-gallery">
+
+    <div class="container">
+
+        <h1>
+            विद्यालय फोटो गैलरी
+        </h1>
+
+        <p>
+            विद्यालय के विभिन्न कार्यक्रमों,
+            गतिविधियों एवं परिसर की झलकियाँ।
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus2.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus3.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus4.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus5.png') }}">
+            </div>
+
+           
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus_coridor.png') }}">
+            </div>
+
+
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/gallery/photo2.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/gallery/photo3.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/gallery/photo4.png') }}">
+            </div>
+
+        
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/gallery/photo5.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/gallery/photo6.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/gallery/photo7.png') }}">
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शिकायत प्रकोष्ठ | आचार्य रघुवीर इंटर कॉलेज</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+```
+<!-- Banner -->
+
+<section class="complaint-banner">
+
+    <div class="container">
+
+        <h1>शिकायत प्रकोष्ठ</h1>
+
+        <p>
+            आपकी शिकायत हमारे लिए महत्वपूर्ण है।
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Information -->
+
+<section class="complaint-info">
+
+    <div class="container">
+
+        <h2>ऑनलाइन शिकायत दर्ज करें</h2>
+
+        <p>
+            यदि विद्यालय से संबंधित किसी भी प्रकार की समस्या,
+            सुझाव, अनुशासन, शुल्क, शिक्षण व्यवस्था या अन्य विषयों
+            पर शिकायत दर्ज करनी हो, तो कृपया नीचे दिया गया फॉर्म भरें।
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Complaint Form -->
+
+<section class="complaint-form-section">
+
+    <div class="container">
+
+        <form method="POST"
+              action="/complaint"
+              enctype="multipart/form-data">
+
+            <div>
+
+                <label>शिकायतकर्ता का नाम *</label>
+
+                <input type="text"
+                       name="name"
+                       required>
+
+            </div>
+
+            <div>
+
+                <label>मोबाइल नंबर *</label>
+
+                <input type="tel"
+                       name="mobile"
+                       required>
+
+            </div>
+
+            <div>
+
+                <label>ईमेल (वैकल्पिक)</label>
+
+                <input type="email"
+                       name="email">
+
+            </div>
+
+            <div>
+
+                <label>विद्यार्थी का नाम</label>
+
+                <input type="text"
+                       name="student_name">
+
+            </div>
+
+            <div>
+
+                <label>कक्षा</label>
+
+                <select name="class">
+
+                    <option value="">चयन करें</option>
+
+                    <option>कक्षा 6</option>
+                    <option>कक्षा 7</option>
+                    <option>कक्षा 8</option>
+                    <option>कक्षा 9</option>
+                    <option>कक्षा 10</option>
+                    <option>कक्षा 11</option>
+                    <option>कक्षा 12</option>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <label>शिकायत श्रेणी *</label>
+
+                <select name="category" required>
+
+                    <option value="">चयन करें</option>
+
+                    <option>शिक्षण व्यवस्था</option>
+
+                    <option>अनुशासन</option>
+
+                    <option>शुल्क संबंधी</option>
+
+                    <option>परिवहन</option>
+
+                    <option>विद्यालय प्रशासन</option>
+
+                    <option>सुविधाएँ</option>
+
+                    <option>अन्य</option>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <label>विषय *</label>
+
+                <input type="text"
+                       name="subject"
+                       required>
+
+            </div>
+
+            <div>
+
+                <label>विस्तृत शिकायत *</label>
+
+                <textarea name="complaint"
+                          rows="8"
+                          required></textarea>
+
+            </div>
+
+            <div>
+
+                <label>संबंधित दस्तावेज़ (यदि हो)</label>
+
+                <input type="file"
+                       name="attachment">
+
+            </div>
+
+            <div>
+
+                <button type="submit">
+                    शिकायत दर्ज करें
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Note -->
+
+<section class="complaint-note">
+
+    <div class="container">
+
+        <h3>महत्वपूर्ण सूचना</h3>
+
+        <p>
+            आपकी शिकायत विद्यालय प्रशासन तक सुरक्षित रूप से पहुँचाई जाएगी।
+            शिकायत प्राप्त होने के पश्चात यथाशीघ्र आवश्यक कार्यवाही की जाएगी।
+        </p>
+
+    </div>
+
+</section>
+```
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
+{% endblock %}

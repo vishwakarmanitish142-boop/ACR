@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>आचार्य रघुवीर इंटर कॉलेज</title>
+
+     <!-- Font Awesome -->
+
+     <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+     <!--css-->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+                <img src="{{ url_for('static', filename='images/school/logo7.png') }}"
+                     alt="Logo">
+
+                <h2>आचार्य रघुवीर इंटर कॉलेज</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="/">मुख्य पृष्ठ</a></li>
+
+                <li><a href="/about">परिचय</a></li>
+
+                <li><a href="/academics">शैक्षणिक कार्यक्रम</a></li>
+
+                <li><a href="/gallery">गैलरी</a></li>
+
+                <li><a href="/events">कार्यक्रम</a></li>
+
+                <li><a href="/complaint">शिकायत</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Page Content -->
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+    
+            <!-- Column 1 -->
+    
+            <div class="footer-col">
+    
+                <img src="{{ url_for('static',
+                filename='images/school/logo7.png') }}"
+                alt="Logo"
+                class="footer-logo">
+    
+                <h3>
+                    आचार्य रघुवीर इंटर कॉलेज
+                </h3>
+    
+                <p>
+                    रघुवीर नगर, रूमा, कानपुर
+                </p>
+    
+                <p>
+                    📞 +91 9450121054 , +91 9838624848
+                </p>
+    
+                <p>
+                    ✉ info@aric.edu.in
+                </p>
+    
+            </div>
+    
+            <!-- Column 2 -->
+    
+            <div class="footer-col">
+    
+                <h3>त्वरित लिंक</h3>
+    
+                <ul>
+    
+                    <li><a href="/">मुख्य पृष्ठ</a></li>
+    
+                    <li><a href="/about">परिचय</a></li>
+    
+                    <li><a href="/academics">शैक्षणिक</a></li>
+    
+                    <li><a href="/gallery">गैलरी</a></li>
+    
+                    <li><a href="/complaint">शिकायत</a></li>
+    
+                </ul>
+    
+            </div>
+    
+            <!-- Column 3 -->
+    
+            <div class="footer-col">
+    
+                <h3>
+                    हमारा स्थान
+                </h3>
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.4055421921607!2d80.44782057513842!3d26.345742084226504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c42799ac8a2b5%3A0xc4f0ce501936089a!2sAcharya%20Raghuveer%20Inter%20College%2C%20Shubh%20Computer!5e0!3m2!1sen!2sus!4v1781085583621!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            </div>
+    
+            <!-- Column 4 -->
+    
+            <div class="footer-col">
+    
+                <h3>
+                    सोशल मीडिया
+                </h3>
+                
+                <div class="social-links">
+    
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        Facebook
+                    </a>
+                    
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                        YouTube
+                    </a>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+    
+            <p>
+                © 2026 आचार्य रघुवीर इंटर कॉलेज
+            </p>
+    
+            <p>
+                Website Designed & Developed By
+                <strong>Pinweb Private Limited</strong>
+            </p>
+    
+            <p>
+                Lead Developer :
+                <strong>Ritesh Sharma</strong>
+            </p>
+    
+        </div>
+    
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- ERP FLOATING LOGIN -->
+
+<div class="erp-float">
+
+    <button class="erp-btn">
+
+    <i class="fas fa-user-graduate"></i>
+
+    ERP लॉगिन
+
+    </button>
+
+    <div class="erp-menu">
+
+        <a href="/student-login">
+
+            विद्यार्थी / अभिभावक लॉगिन
+
+        </a>
+
+        <a href="/admin-login">
+
+            प्रशासक / स्टाफ लॉगिन
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

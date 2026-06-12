@@ -1,0 +1,693 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+
+<section id="hero">
+    
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <img src="{{ url_for('static', filename='images/school/logo7.png') }}"
+             alt="विद्यालय लोगो"
+             class="hero-logo">
+
+        <h1>
+            आचार्य रघुवीर इंटर कॉलेज
+        </h1>
+
+        <h2>
+            राष्ट्र जाग्रयाम वयम्
+        </h2>
+
+        <p>
+            वैदिक संस्कार, आधुनिक शिक्षा और उज्ज्वल भविष्य
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#admission">
+                प्रवेश प्रक्रिया
+            </a>
+
+            <a href="#about">
+                विद्यालय परिचय
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about-acharya">
+
+    <div class="container">
+
+        <div class="acharya-section">
+
+            <img src="{{ url_for('static',
+            filename='images/school/statue2.png') }}"
+            alt="आचार्य रघुवीर जी"
+            class="acharya-image">
+
+            <h2>
+                आचार्य रघुवीर जी
+            </h2>
+
+            <p>
+
+                परिचय
+
+                30 दिसम्बर 1902 - 14 मई 1963
+
+                भारतीय धरोहर के मनीषी आचार्य रघुवीर।
+
+                महामनीषी आचार्य रघुवीर का जन्म
+                30 दिसम्बर 1902 ई० को रावलपिण्डी
+                (पाकिस्तान) में हुआ था।
+
+                विद्यार्थी जीवन से ही वे सामाजिक
+                कार्यों में सक्रिय रहे और भारतीय
+                संस्कृति के संरक्षण हेतु जीवन समर्पित किया।
+
+                जनवरी 1934 में उन्होंने सरस्वती विहार
+                की स्थापना की तथा भारतीय ज्ञान पर
+                शोध कार्य प्रारम्भ करवाया।
+
+                24 अप्रैल 1948 को उन्हें संविधान सभा
+                का सदस्य मनोनीत किया गया।
+
+                1952 से 1962 तक वे राज्यसभा के सदस्य रहे।
+
+                14 मई 1963 को कानपुर के रूमा ग्राम के
+                निकट एक दुर्घटना में उनका निधन हुआ।
+
+                उसी पुण्य स्मृति में
+                आचार्य रघुवीर इंटर कॉलेज संचालित है।
+
+            </p>
+
+            <p>
+
+                आचार्य रघुवीर जी का उद्देश्य
+                विद्यार्थियों का सर्वांगीण विकास
+                कराना था।
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATISTICS -->
+
+<section id="stats">
+
+    <div class="stat-card">
+
+        <h3>2500+</h3>
+        <p>विद्यार्थी</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>100+</h3>
+        <p>शिक्षक</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>30+</h3>
+        <p>वर्षों का अनुभव</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>95%</h3>
+        <p>उत्कृष्ट परिणाम</p>
+
+    </div>
+
+</section>
+
+<!-- ACADEMICS -->
+
+<section id="academics">
+
+    <h2>
+        शैक्षणिक कार्यक्रम
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>हाई स्कूल</h3>
+
+            <p>
+                गुणवत्तापूर्ण माध्यमिक शिक्षा
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>इंटरमीडिएट</h3>
+
+            <p>
+                विज्ञान, वाणिज्य एवं कला वर्ग
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FACILITIES -->
+
+<section id="facilities">
+
+    <h2>
+        हमारी सुविधाएँ
+    </h2>
+
+    <div class="facility-grid">
+
+        <div>स्मार्ट कक्षाएँ</div>
+        <div>कम्प्यूटर लैब</div>
+        <div>विज्ञान प्रयोगशाला</div>
+        <div>पुस्तकालय</div>
+        <div>खेल परिसर</div>
+        <div>सीसीटीवी सुरक्षा</div>
+
+    </div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+
+    <h2>
+        उपलब्धियाँ
+    </h2>
+
+    <p>
+        बोर्ड परीक्षाओं में उत्कृष्ट परिणाम तथा
+        विभिन्न प्रतियोगिताओं में उल्लेखनीय सफलता।
+    </p>
+
+</section>
+
+<!-- NEWS -->
+
+<section id="news">
+
+    <div class="container">
+
+        <h2>
+            नवीनतम समाचार
+        </h2>
+
+        <div class="news-box">
+
+            <div class="news-item">
+
+                📌 कक्षा 6 से 12 तक के प्रवेश प्रारम्भ हो चुके हैं।
+
+            </div>
+
+            <div class="news-item">
+
+                📌 वार्षिक परीक्षा परिणाम शीघ्र घोषित किये जायेंगे।
+
+            </div>
+
+            <div class="news-item">
+
+                📌 योग दिवस समारोह 21 जून को आयोजित किया जायेगा।
+
+            </div>
+
+            <div class="news-item">
+
+                📌 विज्ञान प्रदर्शनी हेतु छात्र अपने मॉडल जमा करें।
+
+            </div>
+
+            <div class="news-item">
+
+                📌 विद्यालय में स्मार्ट क्लास सुविधाओं का विस्तार किया गया है।
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EVENTS -->
+
+<section id="events">
+
+    <div class="container">
+
+        <h2>
+            आगामी कार्यक्रम
+        </h2>
+
+        <div class="events-grid">
+
+            <!-- EVENT 1 -->
+
+            <div class="event-card">
+
+                <img src="{{ url_for('static',
+                filename='images/events/yogaday.png') }}"
+                alt="योग दिवस">
+
+                <div class="event-content">
+
+                    <span class="event-date">
+                        21 जून 2026
+                    </span>
+
+                    <h3>
+                        अंतर्राष्ट्रीय योग दिवस
+                    </h3>
+
+                    <p class="short-text">
+                        विद्यालय परिसर में योग दिवस का आयोजन।
+                    </p>
+
+                    <p class="full-text">
+
+                        योग दिवस के अवसर पर विद्यार्थियों,
+                        शिक्षकों एवं अभिभावकों की सहभागिता
+                        से सामूहिक योगाभ्यास एवं स्वास्थ्य
+                        जागरूकता कार्यक्रम आयोजित किया जायेगा।
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- EVENT 2 -->
+
+            <div class="event-card">
+
+                <img src="{{ url_for('static',
+                filename='images/events/plantation.png') }}"
+                alt="वृक्षारोपण">
+
+                <div class="event-content">
+
+                    <span class="event-date">
+                        05 जुलाई 2026
+                    </span>
+
+                    <h3>
+                        वृक्षारोपण अभियान
+                    </h3>
+
+                    <p class="short-text">
+                        पर्यावरण संरक्षण हेतु विशेष अभियान।
+                    </p>
+
+                    <p class="full-text">
+
+                        विद्यार्थियों द्वारा विद्यालय एवं
+                        आसपास के क्षेत्र में वृक्षारोपण
+                        कार्यक्रम संचालित किया जायेगा।
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<!-- GALLERY PREVIEW -->
+
+<section id="gallery">
+
+    <div class="container">
+
+        <h2>विद्यालय झलकियाँ</h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus4.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus5.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus_coridor.png') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/campus_karyalay.png') }}">
+            </div>
+
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static',
+                filename='images/school/statue12.png') }}"
+                class="gallery-statue">
+            </div>
+
+        </div>
+
+        <div class="gallery-button">
+
+            <a href="/gallery">
+                सम्पूर्ण गैलरी देखें
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRINCIPAL -->
+
+<section id="chairman">
+
+    <div class="container">
+
+        <div class="message-card">
+
+            <div class="message-image">
+
+                <img src="{{ url_for('static',
+                filename='images/authorities/chairman.png') }}"
+                alt="chairman photo">
+
+            </div>
+
+            <div class="message-content">
+
+                <h2>
+                    श्री प्रेमचंद्र गुप्त (समाजसेवी एवं व्यवसायी)
+                </h2>
+
+                <p>
+                प्रिय विद्यार्थियों, अभिभावकों एवं शिक्षकों,
+                    
+                    आचार्य रघुवीर इंटर कॉलेज परिवार की ओर से आप सभी का हार्दिक स्वागत है।
+                    
+                    शिक्षा केवल ज्ञान अर्जित करने का माध्यम नहीं, बल्कि व्यक्तित्व निर्माण, नैतिक मूल्यों के विकास एवं समाज के प्रति उत्तरदायित्व की भावना जागृत करने का सशक्त साधन है। हमारा उद्देश्य विद्यार्थियों को ऐसी गुणवत्तापूर्ण शिक्षा प्रदान करना है, जिससे वे ज्ञान, अनुशासन, आत्मविश्वास और संस्कारों से समृद्ध होकर राष्ट्र निर्माण में सार्थक योगदान दे सकें।
+                    
+                    विद्यालय में आधुनिक शिक्षण पद्धतियों के साथ-साथ भारतीय संस्कृति एवं मानवीय मूल्यों को भी समान महत्व दिया जाता है। हमें विश्वास है कि हमारे शिक्षकगण, अभिभावक एवं विद्यार्थी मिलकर उत्कृष्टता की नई ऊँचाइयों को प्राप्त करेंगे।
+                    
+                    मैं सभी विद्यार्थियों के उज्ज्वल भविष्य की कामना करता हूँ तथा विद्यालय परिवार के निरंतर सहयोग एवं समर्पण के लिए आभार व्यक्त करता हूँ।
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="manager">
+
+    <div class="container">
+
+        <div class="message-card">
+
+            <div class="message-image">
+
+                <img src="{{ url_for('static',
+                filename='images/authorities/manager.png') }}"
+                alt="manager photo">
+
+            </div>
+
+            <div class="message-content">
+
+                <h2>
+                    श्री प्रशांत सूरी (प्रबंधक)
+                </h2>
+
+                <p>
+                    प्रिय अभिभावकों, विद्यार्थियों एवं शुभचिंतकों,
+                    आचार्य रघुवीर इंटर कॉलेज के नए शैक्षणिक सत्र में आपका हार्दिक स्वागत है। जैसे ही हम एक और आशाजनक वर्ष में प्रवेश कर रहे हैं, हमारा ध्यान विद्यार्थियों के सर्वांगीण विकास और उन्हें तेजी से बदलती दुनिया की चुनौतियों का सामना करने के लिए तैयार करने पर केंद्रित है। शिक्षा केवल पुस्तकों तक सीमित नहीं है, बल्कि यह चरित्र निर्माण, जिज्ञासा और आत्मविश्वास विकसित करने का माध्यम भी है।
+                    हम नवाचार और प्रौद्योगिकी से प्रेरित एक गतिशील युग में रह रहे हैं। अपने विद्यार्थियों को उत्कृष्ट बनाने के लिए हम निरंतर अपनी शिक्षण पद्धतियों का आधुनिकीकरण कर रहे हैं तथा डिजिटल शिक्षण सुविधाओं का विस्तार कर रहे हैं। हमारा उद्देश्य प्रत्येक विद्यार्थी को आलोचनात्मक चिंतन क्षमता, वैश्विक दृष्टिकोण और उज्ज्वल भविष्य के निर्माण हेतु आवश्यक दृढ़ता से सुसज्जित करना है।
+                    हम अपने अभिभावकों के निरंतर विश्वास और सहयोग के लिए उनका हृदय से आभार व्यक्त करते हैं। आइए, हम सब मिलकर अपने बच्चों को बड़े सपने देखने और उत्कृष्टता प्राप्त करने के लिए प्रेरित करें।
+                   
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="principal">
+
+    <div class="container">
+
+        <div class="message-card">
+
+            <div class="message-image">
+
+                <img src="{{ url_for('static',
+                filename='images/authorities/principal.png') }}"
+                alt="manager photo">
+
+            </div>
+
+            <div class="message-content">
+
+                <h2>
+                    श्री गिरिजेश नारायण त्रिपाठी (प्रधानाचार्य)
+                </h2>
+
+                <p>
+प्रिय विद्यार्थियों, अभिभावकों, शिक्षकों एवं कर्मचारियों,
+
+नवीन शैक्षणिक सत्र 2026-27 में आप सभी का हार्दिक स्वागत है।
+
+हमारा उद्देश्य विद्यार्थियों को सुरक्षित, प्रेरणादायक एवं ज्ञानवर्धक वातावरण प्रदान करना है, जहाँ वे शैक्षिक उत्कृष्टता के साथ-साथ रचनात्मकता, नैतिक मूल्यों और नवाचार की भावना विकसित कर सकें। बदलते समय और कृत्रिम बुद्धिमत्ता के युग में हम अनुभवात्मक एवं आधुनिक शिक्षण पद्धतियों के माध्यम से विद्यार्थियों को भविष्य की चुनौतियों के लिए तैयार करने हेतु प्रतिबद्ध हैं।
+
+हम विद्यार्थियों में आत्मविश्वास, नेतृत्व, अनुशासन, समय प्रबंधन तथा राष्ट्र के प्रति उत्तरदायित्व की भावना विकसित करने का निरंतर प्रयास करते हैं। हमारा विश्वास है कि प्रत्येक छात्र में निहित प्रतिभा को उचित मार्गदर्शन और अवसरों के माध्यम से निखारा जा सकता है।
+
+आप सभी के सहयोग से हम उत्कृष्ट शिक्षा एवं समग्र विकास के अपने लक्ष्य को और अधिक सशक्त बनाएंगे।
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- OUR EXPERT FACULTY -->
+
+<section id="faculty">
+
+    <div class="container">
+
+        <h2>
+            हमारे मार्गदर्शक
+        </h2>
+
+        <div class="faculty-grid">
+
+            <div class="faculty-card">
+
+                <img src="{{ url_for('static',
+                filename='images/authorities/staff2.png') }}"
+                alt="शिक्षक">
+
+                <h3>
+                    श्री अरुण अवस्थी 
+                </h3>
+
+                <p>
+                    सहायक शिक्षक 
+                </p>
+
+            </div>
+
+            <div class="faculty-card">
+
+                <img src="{{ url_for('static',
+                filename='images/authorities/staff1.png') }}"
+                alt="शिक्षक">
+
+                <h3>
+                    श्री सुबोध मिश्रा 
+                </h3>
+
+                <p>
+                    शिक्षक
+                </p>
+
+            </div>
+
+            <div class="faculty-card">
+
+                <img src="{{ url_for('static',
+                filename='images/authorities/staff3.png') }}"
+                alt="शिक्षक">
+
+                <h3>
+                    श्री सुशील शुक्ल 
+                </h3>
+
+                <p>
+                   विद्यालय समन्वयक 
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ADMISSION -->
+
+<section id="admission">
+
+    <div class="container">
+
+        <h2>
+            प्रवेश सत्र 2026-27
+        </h2>
+
+        <p class="admission-subtitle">
+
+            कक्षा 6 से 12 तक प्रवेश हेतु आवेदन करें।
+
+        </p>
+
+        <form class="admission-form">
+
+            <div class="form-row">
+
+                <input
+                type="text"
+                placeholder="विद्यार्थी का नाम"
+                required>
+
+                <input
+                type="text"
+                placeholder="पिता का नाम"
+                required>
+
+            </div>
+
+            <div class="form-row">
+
+                <input
+                type="number"
+                placeholder="मोबाइल नंबर"
+                required>
+
+                <input
+                type="email"
+                placeholder="ईमेल (यदि हो)">
+
+            </div>
+
+            <div class="form-row">
+
+                <select required>
+
+                    <option>
+                        कक्षा चुनें
+                    </option>
+
+                    <option>
+                        कक्षा 6
+                    </option>
+
+                    <option>
+                        कक्षा 7
+                    </option>
+
+                    <option>
+                        कक्षा 8
+                    </option>
+
+                    <option>
+                        कक्षा 9
+                    </option>
+
+                    <option>
+                        कक्षा 10
+                    </option>
+
+                    <option>
+                        कक्षा 11
+                    </option>
+
+                    <option>
+                        कक्षा 12
+                    </option>
+
+                </select>
+
+                <input
+                type="text"
+                placeholder="ग्राम / शहर">
+
+            </div>
+
+            <textarea
+            rows="5"
+            placeholder="पूरा पता">
+            </textarea>
+
+            <button type="submit">
+
+                प्रवेश हेतु आवेदन करें
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

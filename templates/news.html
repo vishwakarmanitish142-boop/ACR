@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="news-section">
+
+    <div class="container">
+
+        <h1>नवीनतम समाचार</h1>
+
+        {% for item in news %}
+
+        <div class="card">
+
+            <h2>{{ item[1] }}</h2>
+
+            <p>{{ item[2] }}</p>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}
